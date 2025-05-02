@@ -1,0 +1,106 @@
+:root {
+  --primary-dark: #03045e;
+  --primary: #0077b6;
+  --primary-light: #00b4d8;
+  --secondary-light: #90e0ef;
+  --background-light: #caf0f8;
+  --white: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --nav-bg: rgba(3, 4, 94, 0.95);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #03045e;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full screen height */
+  margin: 0;
+  padding: 0;
+  background-color: #caf0f8; /* Default background color */
+}
+
+.navbar {
+  background: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  padding: 1.2rem 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 30px var(--shadow-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+/* Content */
+.content {
+  flex: 1; /* Take remaining space between header and footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('e1628ab716386b3d6fee9504ae4d537d.gif') no-repeat center center fixed; /* Set the waterfall gif as background */
+  background-size: cover; /* Ensures the background image covers the area */
+  padding: 20px;
+  color: #03045e;
+  z-index: 1;
+}
+
+.data-card {
+  background-color: rgba(144, 224, 239, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.metric {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #0077b6; /* Blue footer */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  margin-top: auto; /* Push footer to the bottom */
+  width: 100%;
+  z-index: 2; /* Ensure footer stays above content */
+}
+
+/* Header - with transparency */
+header {
+  background-color: rgba(0, 119, 182, 0.7); /* Semi-transparent to blend with the background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Main Content Overlay */
+.content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7); /* Slight white overlay for readability */
+  border-radius: 10px;
+  margin-top: 20px;
+}

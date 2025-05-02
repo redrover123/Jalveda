@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JalVeda - Water Quality Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">JalVeda</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="realtime.html">Real-Time Data</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>JalVeda</h1>
+                <p>Your real-time water quality monitoring solution</p>
+                <a href="realtime.html" class="cta-button">View Live Data</a>
+            </div>
+            <div class="image-section">
+                <img src="images/hero-water.svg" alt="Clean Water Initiative" class="water-image">
+                <img src="images/hands-water.svg" alt="Community Water Access" class="water-image">
+                <img src="images/water-pump.svg" alt="Water Monitoring" class="water-image">
+            </div>
+        </section>
+
+        <section class="data-section">
+            <div class="data-content">
+                <h2>Live Water Quality Metrics</h2>
+                <div class="data-display">
+                    <div class="card">
+                        <h3>Turbidity</h3>
+                        <div class="metric">
+                            <p><strong>Value: </strong><span id="turbidity">Loading...</span> NTU</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Total Dissolved Solids (TDS)</h3>
+                        <div class="metric">
+                            <p><strong>Value: </strong><span id="tds">Loading...</span> ppm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Team JalVeda</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JalVeda - Real-Time Data</title>
+  <link rel="stylesheet" href="unified.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <svg width="32" height="32" viewBox="0 0 100 100" style="margin-right: 8px; vertical-align: middle;">
+        <path d="M50 5 L80 65 L50 95 L20 65 Z" fill="#00b4d8"/>
+        <path d="M50 20 L70 60 L50 80 L30 60 Z" fill="#0077b6"/>
+        <circle cx="50" cy="45" r="8" fill="#ffffff"/>
+      </svg>
+      JalVeda
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="realtime.html" class="active">Real-Time Data</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="section">
+    <h2>Real-Time Water Quality Stats</h2>
+    <div class="stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+      <div class="card">
+        <h3>Turbidity</h3>
+        <p><strong>Current Value: </strong><span id="turbidity">Loading...</span> NTU</p>
+        <div class="data-history">
+          <h4>Recent History</h4>
+          <table id="turbidity-history">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Value (NTU)</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="description">Safe range: 1-5 NTU</p>
+      </div>
+      <div class="card">
+        <h3>Total Dissolved Solids (TDS)</h3>
+        <p><strong>Current Value: </strong><span id="tds">Loading...</span> ppm</p>
+        <div class="data-history">
+          <h4>Recent History</h4>
+          <table id="tds-history">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Value (ppm)</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="description">Safe range: 50-1000 ppm</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Team JalVeda</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

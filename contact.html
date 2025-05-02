@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JalVeda - Contact</title>
+  <link rel="stylesheet" href="unified.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <svg width="32" height="32" viewBox="0 0 100 100" style="margin-right: 8px; vertical-align: middle;">
+        <path d="M50 5 L80 65 L50 95 L20 65 Z" fill="#00b4d8"/>
+        <path d="M50 20 L70 60 L50 80 L30 60 Z" fill="#0077b6"/>
+        <circle cx="50" cy="45" r="8" fill="#ffffff"/>
+      </svg>
+      JalVeda
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="realtime.html">Real-Time Data</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="section">
+    <div class="hero" style="text-align: center; margin-bottom: 4rem;">
+      <h1>Contact Us</h1>
+      <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Together we can make a difference in water quality</p>
+    </div>
+
+    <div class="content-grid">
+      <div class="card glass-card">
+        <div class="card-content">
+          <h2>Get in Touch</h2>
+          <p>Have questions about water quality or want to contribute to our mission? We'd love to hear from you!</p>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required class="glass-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required class="glass-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required class="glass-input" rows="5"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card glass-card">
+        <div class="card-content">
+          <h2>Why Water Quality Matters</h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <svg width="48" height="48" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="#00b4d8" opacity="0.2"/>
+                <path d="M30 50 C30 30 50 20 50 20 C50 20 70 30 70 50 C70 70 50 80 50 80 C50 80 30 70 30 50Z" fill="#0077b6"/>
+              </svg>
+              <h3>Clean Water</h3>
+              <p>Access to clean water is a fundamental human right and essential for life.</p>
+            </div>
+            <div class="info-item">
+              <svg width="48" height="48" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="#00b4d8" opacity="0.2"/>
+                <path d="M25 65 L50 25 L75 65 Z" fill="#0077b6"/>
+              </svg>
+              <h3>Sustainability</h3>
+              <p>Monitoring water quality helps ensure a sustainable future for generations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Team JalVeda </p>
+  </footer>
+</body>
+</html>
